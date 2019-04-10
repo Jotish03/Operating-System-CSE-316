@@ -1,0 +1,3 @@
+•	exit();//  i have used additional code snippet.
+•	The exit function, declared in the standard include file <stdlib.h>, terminates a C++ program.
+•	The value supplied as an argument to exit is returned to the operating system as the program's return code or exit code. By convention, a return code of zero means that the program completed successfully.
