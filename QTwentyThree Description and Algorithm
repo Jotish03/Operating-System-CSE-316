@@ -1,0 +1,19 @@
+In computer operating systems, demand paging (as opposed to anticipatory paging) is a method of virtual memory management. It follows that a process begins execution with none of its pages in physical memory, and many page faults will occur until most of a process's working set of pages are located in physical memory.
+In Program 1.1 Page table is held in registers which takes 8 milliseconds to service a page fault if an empty page is is available and 20 milliseconds if the replaced page is modified. Memory access time is 100 nanoseconds.The page to be replaced is modified 70 percent of the time. It generates maximum acceptable page-fault rate for access time is not more than 200 nanoseconds.
+
+Algorithm
+
+•	Start
+•	Declare variacle  prob1,prob2
+•	Initialize the variable float prob1 = 0.7, prob2 = 0.3;
+•	double long p;  long t1 = 100, t2 = 20000000 , t3 = 8000000, tmax = 200; //time is in neno sec an milli sec
+•	print the terms of series
+•	  printf("Let p be the page fault rate (the probability that a memory access results in a page fault)\n")
+•	 printf("Then  (1 - p) is the probability that a memory access costs 100 nsec.\n")
+•	 printf ("The probability that a page fault costs %ld is %f * p and the probability that a page fault costs                 %  ld is %f * p.\n",t2,prob1,t3,prob2)
+•	  printf("Since 1 nsec = 1000000 msec,\n");
+•	 p = (tmax-t1)/((prob1*t2)+(prob2*t3)-t1);
+•	printf("%Lf will be the page fault rate.\n",p)
+•	printf("%Lf persentage\n",p*100);
+•	print the value of show
+•	END
